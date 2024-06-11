@@ -12,12 +12,6 @@ class Welcome extends Component
 {
     use WithFileUploads;
 
-    public $artos;
-
-    public function artwork(){
-        //dd('yes');
-    }
-
 
     public $imageInput;
     public $asciiOutput;
@@ -25,7 +19,7 @@ class Welcome extends Component
     public function convertToAscii()
     {
         $this->validate([
-            'imageInput' => 'image', // 1MB Max
+            'imageInput' => 'image',
         ]);
 
         $path = $this->imageInput->getRealPath();
@@ -52,12 +46,6 @@ class Welcome extends Component
         }
         return $output;
     }
-
-
-
-
-
-
 
     public function render()
     {
