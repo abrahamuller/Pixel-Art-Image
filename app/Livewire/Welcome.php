@@ -29,6 +29,7 @@ class Welcome extends Component
     public function imageToAscii($imagePath, $scaleFactor = 0.2)
     {
         $characters = ['@', '#', 's', '%', '?', '*', '+', ';', ':', ',', '.'];
+        //$characters = ['9', '8', '7', '6', '5', '4', '3', '2', '1', '0', '.'];
         $image = imagecreatefromstring(file_get_contents($imagePath));
         $width = imagesx($image);
         $height = imagesy($image);

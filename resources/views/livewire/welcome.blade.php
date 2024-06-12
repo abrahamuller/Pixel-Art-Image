@@ -62,7 +62,7 @@
             </div>
             <div>
                 <div class="mt-4 p-2 overflow-auto flex justify-center">
-                    <pre class="text-xsss sixo font-bold text-gray-700">{{ $asciiOutput }}</pre>
+                    <pre class="text-xsss sixo font-bold text-black">{{ $asciiOutput }}</pre>
                 </div>
             </div>
         </div>
